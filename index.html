@@ -1,68 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdel's personal site</title>
-  </head>
-  <body>
-    <table cellspacing="20">
-      <tr>
-        <td><img src="abdel.jpg"></td>
-        <td><h1>Abdel Qayyim</h1></td>
-        <p><em>Found and CTO of <strong> <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Flakersdaily.com%2Fmark-cuban-reveals-lebron-james-final-statement-crucial-call-saved-2020-nba-playoffs%2F&psig=AOvVaw2ayHTcz0x_a9r2B_fEZt6w&ust=1606612423393000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMDE1uiHpO0CFQAAAAAdAAAAABAD">APP Brewery.</a></strong></em></p>
-        <p>I am an IOS and WEB Developer</p>
-      </tr>
-    </table>
-    <hr noshade> 
-    <h3>Books and teachings</h3>
-    <ul>
-      <li>The complete IOS app bootcamp</li>
-      <li>Whatever man </li>
-    </ul>
-    <h3>Work Experience</h3>
-    <table>
-      <th>
-        <tr>
-          <th>Dates</th>
-          <th>Work</th>
-        </tr>
-      </th>
-      <tbody>
-        <tr>
-          <td>2012-2020</td>
-          <td>Attended The International School of Dakar</td>
-        </tr>
-        <tr>
-          <td>2015-2020</td>
-          <td>I was in high school</td>
-        </tr>
-      </tbody>
-      <tfoot>
-      </tfoot>
-    </table>
-    <hr>
-    <h3>My hobbies</h3>
-    <ol start="1">
-      <li>Basketball</li>
-      <li>Football</li>
-      <li>Sleeping</li>
-    </ol>
-  </body>
-  <h3>Skills</h3>
-  <table border="1">
-    <tr>
-      <td>iOS Development</td>
-      <td> &#10024; &#10024; </td> 
-    </tr>
-    <tr>
-      <td>Web Development</td>
-      <td>&#10024; &#10024; </td>
-    </tr>
-    <tr>
-      <td>Photography</td>
-      <td>&#10024; </td>
-    </tr>
-  </table>
-  <p><a href="Contact-me.html"><strong><em>Contact me </em> </strong></a></p>
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Personal Website</title>
+</head>
+<body>
+    <section class="intro-section">
+        <nav>
+            <div class="left-nav">
+                Abdel Yahaya
+            </div>
+            <div class="right-nav">
+                <span class="nav-btn" data-section="aboutme-section">
+                    About Me
+                </span>
+                <span class="nav-btn"data-section="experience-section">
+                    Experience
+                </span>
+                <span class="nav-btn"data-section="projects-section">
+                    Projects
+                </span>
+            </div>
+        </nav>
+        <div class="introduction">
+            <div class="box intro">
+                <h1>
+                    Hello There, My name is Abdel Yahaya
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque a magni sunt distinctio. Est, ipsa velit saepe, voluptatem corrupti rem, incidunt aspernatur error recusandae doloribus architecto accusantium consequatur quis molestias unde expedita atque nam vel accusamus tempore ullam aliquam asperiores. Sunt, nemo natus vitae beatae a tenetur ipsam qui.
+                </p>
+            </div>
+            <div class=" box send-mail">
+                <form action="#">
+                    <input type="text" placeholder="Name">
+                    <input type="mail" placeholder="E-Mail">
+                    <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                </form>
+            </div>
+        </div>  
+        
+    </section>
+    <section class="aboutme-section" >
+        <h1>
+            About me...
+        </h1>
+        <div class="aboutMe">
+            <div class="text-part">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minima hic incidunt, aliquid asperiores esse dolore eveniet vitae nisi laborum sequi odio sapiente unde amet quidem quasi quas repudiandae molestias a quod facilis magnam cupiditate debitis? Architecto incidunt harum dicta, laboriosam laudantium atque doloremque, voluptatem cumque, explicabo blanditiis nobis at.
+            </div>
+            <div class="image-part">
+                Image Here
+            </div>
+        </div>
+    </section>
+    <section class="experience-section">
+        <h1>
+            Experiences
+        </h1>
+        <div class="experiences">
+            <div class="jobs-names">
+                <button class="job">
+                    Amazon
+                </button>
+                <button class="job">
+                    USINATECH
+                </button>
+                <button class="job">
+                    Google
+                </button>
+            </div>
+            <div class="job-descriptions">
+                <div class="job-description" data-jobName="Amazon">
+                    This is number 0
+                </div>
+                <div class="job-description" data-jobName="USINATECH">
+                    This is number 1
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque aspernatur veniam reiciendis numquam voluptate earum in? Quibusdam, distinctio. Magni perspiciatis, deserunt quisquam pariatur iusto animi optio dolorum laborum unde similique culpa delectus corrupti eaque temporibus commodi! Nesciunt optio libero doloremque nihil dolor eaque illo consectetur repellendus veniam, minus blanditiis ipsam?
+                </div>
+                <div class="job-description" data-jobName="Google">
+                    This is number 2
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque aspernatur veniam reiciendis numquam voluptate earum in? Quibusdam, distinctio. Magni perspiciatis, deserunt quisquam pariatur iusto animi optio dolorum laborum unde similique culpa delectus corrupti eaque temporibus commodi! Nesciunt optio libero doloremque nihil dolor eaque illo consectetur repellendus veniam, minus blanditiis ipsam?
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    <section class="projects-section">
+        <div class="filter">
+            <!-- icons from @ https://iconscout.com/icons/csharp -->
+            <img src="./images/csharp.ico" class="language-csharp">
+            <img src="./images/c.ico" class="language-c">
+            <img src="./images/html.ico" class="language-html">
+            <img src="./images/css.ico" class="language-css">
+            <img src="./images/database.ico" class="language-database">
+            <img src="./images/git.ico" class="language-git">
+            <img src="./images/github.ico" class="language-github">
+            <img src="./images/java.ico" class="language-java">
+            <img src="./images/javascript.ico" class="language-javascript">
+            <img src="./images/mongodb.ico" class="language-mongodb">
+            <img src="./images/node-js.ico" class="language-nodejs">
+            <img src="./images/python.ico" class="language-python">
+
+        </div>
+        <div class="projects">
+            <div class="project">
+                Hello
+            </div>
+            <div class="project">
+                Hello
+            </div>
+            <div class="project">
+                Hello
+            </div>
+            <div class="project">
+                Hello
+            </div>
+            <div class="project">
+                Hello
+            </div>
+            <div class="project">
+                Hello
+            </div>
+            <div class="project">
+                Hello
+            </div>
+            <div class="project">
+                Hello
+            </div>
+            <div class="project">
+                Hello
+            </div>
+            
+        </div>
+    </section>
+    <section class="footer">
+        This is the footer
+    </section>
+</body>
+<script src="./index.js"></script>
 </html>
