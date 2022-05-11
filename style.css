@@ -16,12 +16,6 @@ body{
     width: 100%;
     height: 100%;
 }
-section{
-    height: 100vh;
-    scroll-snap-align: start;
-    position: relative;
-    padding: 15px;
-}
 section:nth-child(even){
     background-color: #111015;
 }
@@ -56,6 +50,11 @@ textarea{
 /* ---------------------------- INTRO-SECTION ------------------------- */
 .intro-section{
     background-color: #16151b;
+
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+    padding: 15px;
 }
 nav{
     height: 5vh;
@@ -117,33 +116,98 @@ form{
     padding: 0;
     height: 70%;
 }
+/* -------------------------------- SPANS ---------------------------- */
+.text-part > span{
+    line-height: 45px;
+}
+span.line1{
+    position: relative;
+    font-size: 2rem;
+}
+span.line2{
+    font-size: 2rem;
+}
+span.line3{
+    font-size: 2rem;
+}
+span.class{
+    color: rgb(178, 51, 178);
+    font-weight: bold;
+}
+span.className{
+    color: green;
+    font-weight: bold;
+}
+span.initKeyword{
+    color: red;
+    font-weight: bold;
+}
+span.selfWord{
+    color: lightblue;
+    font-weight: bold;
+}
+span.string{
+    color: lightcoral;
+    font-weight: bold;
+}
+span.indent{
+    text-indent: 16px;
+}
+span.indent2{
+    text-indent: 36px;
+}
+span.array{
+    text-indent: 70px;
+}
 /* ---------------------------- ABOUTME-SECTION ----------------------- */
 .aboutme-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+    padding: 15px;
 }
 .aboutMe{
     padding: 5%;
     height: 80%;
-    width: 90vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 .text-part{
-    height: 100%;
-    width: 60%;
+    min-height: 600px;
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border: 1px solid white;
+    -webkit-box-shadow: 10px 11px 1px 2px #483c83; 
+    box-shadow: 10px 11px 1px 2px #483c83;
+    margin-right: 5vw;
+    /* background-color: #67666b; */
 }
 .image-part{
-    width: 30%;
-    height: 60%;
+    min-width: 400px;
+    min-height: 500px;
+    width: 200px;
+    height: 300px;
+    background-color: blue;
+    border: 1px solid white;
+    -webkit-box-shadow: 10px 11px 1px 2px #483c83; 
+    box-shadow: 10px 11px 1px 2px #483c83;
 }
 /* ---------------------------- EXPERIENCE-SECTION -------------------- */
 .experience-section{
-    
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+    padding: 15px;
 }
 .experiences{
     position: relative;
@@ -160,33 +224,31 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40%;
-    width: 12%;
     overflow-y: scroll;
-    margin-right: 10px;
 }
 .jobs-names::-webkit-scrollbar{
     -ms-overflow-style: none;
     display: none;
 }
 .job{
-    width: 100%;
-    height: 17%;
+    width: 137px;
+    height: 50px;
     font-size: 1.5vmin;
     border-radius: 0;
     outline: none;
-    border: none;
+    border: 0 solid black;
     color: white;
     background-color: #201f25;
-    margin: 0;
+    overflow-x:scroll ;
 }
 .job:hover{
     background-color: #601fc5;
+    border-right: 4px solid white !important;
 }
 .job-descriptions{
     position: relative;
-    width: 60%;
-    height: 60%;
+    width: 700px;
+    height: 300px;
     background-color: #201f25;
 }
 .job-description{
@@ -205,7 +267,7 @@ form{
 }
 @keyframes load{
     0%{
-        transform: translateY(-45%);
+        transform: translateY(-40%);
         opacity: 0;
     }
     100%{
@@ -221,26 +283,24 @@ i{
     margin: 2%;
 }
 img{
-    transition-duration: 0.2s;
-    transition-timing-function: ease-out;
     transform: scale(1.4);
     padding-left: 1%;
     padding-right: 1%;
 }
 img:hover{
     cursor: pointer;
-    transform: scale(1.5);
-    
+    transform: scale(1.8);
 }
 .projects-section{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    /* background-color: green !important; */
-    /* background-color: #111015; */
-    min-height: 100vh;
     padding: 1%;
+
+    scroll-snap-align: start;
+    position: relative;
+    padding: 15px;
 }
 .filter{
     width: 90%;
@@ -249,31 +309,90 @@ img:hover{
     flex-direction: row;
     justify-content: center;
     margin-bottom: 2%;
+    margin-top: 5px;
 }
 .language{
-    margin: 5px;
+    height: 4vw;
+    margin-right: 10px;
+    margin-top: 5px;
+    transition-duration: 0.5s;
 }
 .projects{
-    min-height: 400px;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
-    overflow-y: scroll;
 }
 .project{
     position: relative;
-    width: 20%;
+    width: 300px;
     margin: 3% 2%;
-    min-height: 20vw;
+    min-height: 300px;
     background-color: #16151b;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+.dates{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-bottom: 10px;
+    color: black;
+}
+.arrow{
+    font-size: 16px;
+    margin: 5px 5px;
+    color: black;
+}
+.dates>.date{
+    background-color: #67666b;
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 5px;
+    color: black;
 }
 .project:hover{
-    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.8);;
+}
+.project:hover .project-detail{
+    visibility: visible;
+}
+.project-detail{
+    visibility: hidden;
+    position: absolute;
+}
+.project-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+}
+.project-description{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+.languages-used{
+    text-align: center;
+    margin-top: 40px;
+    color: black;
 }
 /* ---------------------------- FOOTER-SECTION ------------------------ */
 
