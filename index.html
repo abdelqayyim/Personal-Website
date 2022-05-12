@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Personal Website</title>
 </head>
@@ -53,12 +58,12 @@
         <div class="aboutMe">
             <div class="text-part">
                 <span class="line1"> <span class="class">class</span> <span class="className">AboutMe</span></span>
-                <span class="indent line2"><span class="class">def</span> <span class="initKeyword">__init__</span> <span class="className">(</span> <span class="selfWord">self</span><span class="className">)</span>:</span>
+                <span class="indent line2"><span class="class">def</span> <span class="initKeyword">__init__</span><span class="className">(</span><span class="selfWord">self</span><span class="className">)</span>:</span>
                 <span class="indent2 line3"><span class="selfWord">self</span>.firstName = <span class="string">"Abdel Qayyim" </span></span>
                 <span class="indent2 line3"><span class="selfWord">self</span>.lastName = <span class="string">"Maazou Yahaya" </span></span>
                 <span class="indent2 line3"><span class="selfWord">self</span>.school = <span class="string">"Carleton University" </span></span>
                 <span class="indent2 line3"><span class="selfWord">self</span>.expGraduation = <span class="string">"May 2025" </span></span>
-                <span class="indent2 line3"><span class="selfWord">self</span>.resume = insert resume here</span>
+                <span class="indent2 line3"><span class="selfWord">self</span>.resume = <a target="_blank" href="./Abdel Resume.pdf">Abdel Resume.pdf</a></span>
                 <span class="indent2 line3"><span class="selfWord">self</span>.yearStand = <span class="string">"Third Year" </span></span>
                 <span class="indent2 line3"><span class="selfWord">self</span>.hobbiesAndInterests = [</span>
                 <span class="string array line3">"Basketball"</span>
@@ -90,7 +95,22 @@
             </div>
             <div class="job-descriptions">
                 <div class="job-description" data-jobName="Amazon">
-                    This is number 0
+                    <div class="title-part">
+                        <div class="job-title">
+                            Amazon Warehouse Associate @<span class="company-name">Amazon</span>
+                        </div>
+                        <div class="job-date">
+                            May 2021 - August 2021
+                        </div>
+                    </div>
+                    <div class="job-detail">
+                        <ul class="reset-style custom-style-base custom-style-hover-type-arrow custom-style-hover-animate cursor-pointer">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, temporibus odit officiis iste earum cupiditate!</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, temporibus odit officiis iste earum cupiditate!</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, temporibus odit officiis iste earum cupiditate!</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, temporibus odit officiis iste earum cupiditate!</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="job-description" data-jobName="USINATECH">
                     This is number 1
@@ -147,6 +167,10 @@
                     </div>
                     <div class="languages-used">
                         Python, Flask, SQLite
+                    </div>
+                    <div class="links">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                        <i class="fa-brands fa-github link-to-project"></i>
                     </div>
                 </div>
             </div>

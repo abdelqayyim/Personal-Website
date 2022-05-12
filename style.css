@@ -19,8 +19,63 @@ body{
 section:nth-child(even){
     background-color: #111015;
 }
+a{
+    color: rgb(85, 85, 236);
+}
+
+/* https://codepen.io/dbpas/pen/kxoMXe */
+@-webkit-keyframes move-right {
+    100% { -webkit-transform: translate(0.5em, 0); }
+}
+@-moz-keyframes move-right {
+    100% { -moz-transform: translate(0.5em, 0); }
+}
+@keyframes move-right {
+    100% { transform: translate(0.5em, 0); }
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.text-center {
+    text-align: center;
+}
+div.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+div.display-flex > div {
+    margin: 0 10px 0 10px;
+}
+ul.reset-style {
+    list-style: none;
+}
+ul.custom-style-base li:before {
+    position: absolute;
+    margin-left: -1.5em;
+    padding-right: 1em;
+    color: #601fc5;
+    font-size: 25px;
+    content: '\21D2';
+    font-weight: bold;
+}
+ul.custom-style-hover-color li:hover:before {
+    color: rgba(255,0,0,0.5);
+}
+ul.custom-style-hover-type-arrow li:hover:before {
+    content: '\21D2';
+}
+ul.custom-style-hover-animate li:hover:before {
+    -webkit-animation: move-right 0.5s 0s 1 ease forwards;
+    -moz-animation: move-right 0.5s 0s 1 ease forwards;
+    animation: move-right 0.5s 0s 1 ease forwards;
+}
+
+
+
 h1{
     font-size: 5em;
+    font-family: "Permanent Marker";
 }
 p{
     font-size: 2em;
@@ -119,16 +174,17 @@ form{
 /* -------------------------------- SPANS ---------------------------- */
 .text-part > span{
     line-height: 45px;
+    font-family: 'Courier New', Courier, monospace;
 }
 span.line1{
     position: relative;
-    font-size: 2rem;
+    font-size: 24px;
 }
 span.line2{
-    font-size: 2rem;
+    font-size: 24px;
 }
 span.line3{
-    font-size: 2rem;
+    font-size: 24px;
 }
 span.class{
     color: rgb(178, 51, 178);
@@ -190,7 +246,6 @@ span.array{
     -webkit-box-shadow: 10px 11px 1px 2px #483c83; 
     box-shadow: 10px 11px 1px 2px #483c83;
     margin-right: 5vw;
-    /* background-color: #67666b; */
 }
 .image-part{
     min-width: 400px;
@@ -258,7 +313,7 @@ span.array{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 20px;
     animation: load 800ms ease-out;
 }
@@ -267,7 +322,7 @@ span.array{
 }
 @keyframes load{
     0%{
-        transform: translateY(-40%);
+        transform: translateY(-15%);
         opacity: 0;
     }
     100%{
@@ -275,8 +330,24 @@ span.array{
         opacity: 1;
     }
 }
-
-
+.title-part{
+    height: 70px;
+    width: 100%;
+}
+.job-title{
+    font-size: 30px;
+}
+.company-name{
+    color: #601fc5;
+    font-weight: bold;
+}
+.job-date{
+    height: 30px;
+    font-size: 20px;
+}
+.job-detail{
+    height: 70%;
+}
 /* ---------------------------- PROJECTS-SECTION ---------------------- */
 i{
     font-size: 3em;
@@ -368,7 +439,11 @@ img:hover{
 }
 .project-detail{
     visibility: hidden;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 300px;
 }
 .project-title{
     display: flex;
@@ -393,6 +468,20 @@ img:hover{
     text-align: center;
     margin-top: 40px;
     color: black;
+    font-size: 14px;
+}
+.links > i{
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: black;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
 }
 /* ---------------------------- FOOTER-SECTION ------------------------ */
 
