@@ -1,209 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Personal Website</title>
-</head>
-<body>
-    <section class="intro-section">
-        <nav>
-            <div class="left-nav">
-                Abdel Yahaya
-            </div>
-            <div class="right-nav">
-                <span class="nav-btn" data-section="aboutme-section">
-                    About Me
-                </span>
-                <span class="nav-btn"data-section="experience-section">
-                    Experience
-                </span>
-                <span class="nav-btn"data-section="projects-section">
-                    Projects
-                </span>
-            </div>
-        </nav>
-        <div class="introduction">
-            <div class="box intro">
-                <h1>
-                    Hello There, My name is Abdel Yahaya
-                </h1>
-                <p>
-                    I am currently a third year student at Carleton University pursuing a Bachelor degree in Computer Science with a Stream in Software Engineering.
-                    I am currently trying to experiment with as many technologies as possible, but I as of right now I can say that I am interested in full stack development.
-                </p>
-            </div>
-            <div class=" box send-mail">
-                <form action="#">
-                    <input type="text" placeholder="Name">
-                    <input type="mail" placeholder="E-Mail">
-                    <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
-                </form>
-            </div>
-        </div>  
-        
-    </section>
-    <section class="aboutme-section" >
-        <h1>
-            About me...
-        </h1>
-        <div class="aboutMe">
-            <div class="text-part">
-                <span class="line1"> <span class="class">class</span> <span class="className">AboutMe</span></span>
-                <span class="indent line2"><span class="class">def</span> <span class="initKeyword">__init__</span><span class="className">(</span><span class="selfWord">self</span><span class="className">)</span>:</span>
-                <span class="indent2 line3"><span class="selfWord">self</span>.firstName = <span class="string">"Abdel Qayyim" </span></span>
-                <span class="indent2 line3"><span class="selfWord">self</span>.lastName = <span class="string">"Maazou Yahaya" </span></span>
-                <span class="indent2 line3"><span class="selfWord">self</span>.school = <span class="string">"Carleton University" </span></span>
-                <span class="indent2 line3"><span class="selfWord">self</span>.expGraduation = <span class="string">"May 2025" </span></span>
-                <span class="indent2 line3"><span class="selfWord">self</span>.resume = <a target="_blank" href="./Abdel Resume.pdf">Abdel Resume.pdf</a></span>
-                <span class="indent2 line3"><span class="selfWord">self</span>.yearStand = <span class="string">"Third Year" </span></span>
-                <span class="indent2 line3"><span class="selfWord">self</span>.hobbiesAndInterests = [</span>
-                <span class="string array line3">"Basketball"</span>
-                <span class="string array line3">"Football (Soccer)"</span>
-                <span class="string array line3">"Reading (Fiction)"</span>
-                <span class="string array line3">"Drawing (Beginner)"</span>
-                <span>]</span>
-            </div>
-            <div class="image-part">
-                Image Here
-            </div>
-        </div>
-    </section>
-    <section class="experience-section">
-        <h1>
-            Experiences
-        </h1>
-        <div class="experiences">
-            <div class="jobs-names">
-                <button class="job">
-                    Amazon
-                </button>
-                <button class="job">
-                    USINATECH
-                </button>
-                <button class="job">
-                    Google
-                </button>
-            </div>
-            <div class="job-descriptions">
-                <div class="job-description" data-jobName="Amazon">
-                    <div class="title-part">
-                        <div class="job-title">
-                            Amazon Warehouse Associate @<span class="company-name">Amazon</span>
-                        </div>
-                        <div class="job-date">
-                            May 2021 - August 2021
-                        </div>
-                    </div>
-                    <div class="job-detail">
-                        <ul class="reset-style custom-style-base custom-style-hover-type-arrow custom-style-hover-animate cursor-pointer">
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, temporibus odit officiis iste earum cupiditate!</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, temporibus odit officiis iste earum cupiditate!</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, temporibus odit officiis iste earum cupiditate!</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, temporibus odit officiis iste earum cupiditate!</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="job-description" data-jobName="USINATECH">
-                    This is number 1
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque aspernatur veniam reiciendis numquam voluptate earum in? Quibusdam, distinctio. Magni perspiciatis, deserunt quisquam pariatur iusto animi optio dolorum laborum unde similique culpa delectus corrupti eaque temporibus commodi! Nesciunt optio libero doloremque nihil dolor eaque illo consectetur repellendus veniam, minus blanditiis ipsam?
-                </div>
-                <div class="job-description" data-jobName="Google">
-                    This is number 2
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque aspernatur veniam reiciendis numquam voluptate earum in? Quibusdam, distinctio. Magni perspiciatis, deserunt quisquam pariatur iusto animi optio dolorum laborum unde similique culpa delectus corrupti eaque temporibus commodi! Nesciunt optio libero doloremque nihil dolor eaque illo consectetur repellendus veniam, minus blanditiis ipsam?
-                </div>
-                
-            </div>
-            
-        </div>
-    </section>
-    <section class="projects-section">
-        <div class="filter">
-            <!-- icons from @ https://iconscout.com/icons/csharp -->
+  </head>
 
-            <img src="./images/csharp.ico" class="language-csharp language">
-            <img src="./images/c.ico" class="language-c language">
-            <img src="./images/html.ico" class="language-html language">
-            <img src="./images/css.ico" class="language-css language">
-            <img src="./images/database.ico" class="language-database language">
-            <img src="./images/git.ico" class="language-git language">
-            <img src="./images/github.ico" class="language-github language">
-            <img src="./images/java.ico" class="language-java language">
-            <img src="./images/javascript.ico" class="language-javascript language">
-            <img src="./images/mongodb.ico" class="language-mongodb language">
-            <img src="./images/node-js.ico" class="language-nodejs language">
-            <img src="./images/python.ico" class="language-python language">
+  <body>
+    <div class="main-div">
 
+     <div class="static">
+      <div class="page">
+        <div class="front">
+          Static first
         </div>
-        <div class="projects">
-            <div class="project">
-                <div class="project-detail">
-                    <div class="dates">
-                        <div class="start-date date">
-                            2021
-                        </div>
-                    <div>
-                    <div>
-                        <i class="fa-solid fa-arrow-right arrow"></i>
-                    </div>
-                    </div>
-                        <div class="end-date date">
-                            2022
-                        </div>
-                    </div>
-                    <div class="project-title">
-                        Grade Calculator
-                    </div>
-                    <div class="project-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione deleniti similique inventore et sequi enim accusantium mollitia sunt quod ducimus!
-                    </div>
-                    <div class="languages-used">
-                        Python, Flask, SQLite
-                    </div>
-                    <div class="links">
-                        <i class="fa-solid fa-up-right-from-square"></i>
-                        <i class="fa-brands fa-github link-to-project"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                Hello
-            </div>
-            <div class="project">
-                Hello
-            </div>
-            <div class="project">
-                Hello
-            </div>
-            <div class="project">
-                Hello
-            </div>
-            <div class="project">
-                Hello
-            </div>
-            <div class="project">
-                Hello
-            </div>
-            <div class="project">
-                Hello
-            </div>
-            <div class="project">
-                Hello
-            </div>
-            
+        <div class="back">
+          static back
         </div>
-    </section>
-    <section class="footer">
-        This is the footer
-    </section>
-</body>
-<script src="./index.js"></script>
+      </div>
+     </div>
+
+
+     <div class="flip-down">
+
+      <div class="page" data-down="0">
+        <div class="front">
+          Flip-down front
+        </div>
+        <div class="back">
+          Flip-down front
+        </div>
+      </div>
+
+      <div class="page" data-down="1">
+        <div class="front">
+          Flip-down front - 1
+        </div>
+        <div class="back">
+          Flip-down back -1
+        </div>
+      </div>
+
+      <div class="page" data-down="2">
+        <div class="front">
+          Flip-down front
+        </div>
+        <div class="back">
+          Flip-down front
+        </div>
+      </div>
+
+     </div>
+
+     <div class="flip-up">
+
+
+      <div class="page" data-up="0">
+        <div class="front">
+          Flip-up front -1
+        </div>
+        <div class="back">
+          Flip-up front
+        </div>
+      </div>
+
+      <div class="page" data-up="1">
+        <div class="front">
+          Flip-up front -2
+        </div>
+        <div class="back">
+          Flip-up front -2
+        </div>
+      </div>
+
+     </div>
+
+    </div>
+
+  </body>
+  <script src="./index.js" defer></script>
 </html>
