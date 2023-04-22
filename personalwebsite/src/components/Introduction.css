@@ -1,0 +1,25 @@
+.introduction-parent{
+    height: 100vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Carlito', sans-serif;
+}
+h3{
+    font-size: 1.5rem;
+}
+h1{
+    font-size: 4.5rem;
+    margin-top: 20px;
+}
+h2{
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+}
+p{
+    max-width: 600px;
+    font-size: 1.5rem;
+    word-break: break-all;
+    white-space: normal;
+}
