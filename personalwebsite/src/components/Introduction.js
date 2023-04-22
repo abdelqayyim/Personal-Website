@@ -3,7 +3,7 @@ import './Introduction.css';
 
 const Introduction = (props)=>{
     return (
-        <div className='introduction-parent'>
+        <section className='introduction-parent'>
             <h3>Hi, my name is</h3>
             <h1>Abdel Qayyim Yahaya.</h1>
             <h2>I enjoy learning new Skills.</h2>
@@ -11,7 +11,7 @@ const Introduction = (props)=>{
                 asjdfhlsadkhfklajsdhfkjlashdfjklasdklfhlsadkjfhklsadhfldjksfa-flip-horizontalsdjkfhlkasdhflk
                 lorem3
             </p>
-        </div>
+        </section>
     )
 };
 
