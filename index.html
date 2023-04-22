@@ -9,82 +9,270 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quicksand&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Personal Website</title>
   </head>
 
   <body>
+    <div class="button-sections">
+      <div class="button-circle"><div class="circle-section selected" data-section="0"><span class="material-symbols-outlined">
+        home
+        </span></div><h5>Home</h5></div>
+      <div class="button-circle"><div class="circle-section" data-section="1">1</div><h5>Introduction</h5></div>
+      <div class="button-circle"><div class="circle-section" data-section="2">2</div><h5>Work Experience</h5></div>
+      <div class="button-circle"><div class="circle-section" data-section="3">3</div><h5>Personal Projects</h5></div>
+      <div class="button-circle"><div class="circle-section" data-section="4"><span class="material-symbols-outlined">
+        mail
+        </span></div><h5>Contact</h5></div>
+    </div>
+    <div class="arrow-down">
+      <span class="material-symbols-outlined arr-down">
+        arrow_downward
+        </span>
+    </div>
+    <div class="arrow-up">
+      <span class="material-symbols-outlined arr-up">
+        arrow_upward
+        </span>
+    </div>
     <div class="main-div">
 
-     <div class="static">
-      <div class="page">
-        <div class="front">
-          Static first
+      <div class="static">
+        <div class="page page-0" data-static="0">
+          <div class="front second-color">
+            <div class="main-title"><span> Hello, My name is Abdel Yahaya</span> </div>
+              <div class="main-occupation"><span class="fade-1"> I am currently a Third Year Student</span> </div>
+              <div class="main-school" ><span class="fade-2"> @Carleton University</span> </div>
+              <div class="main-location"><span class="fade-3"> Ontario, Canada</span> </div>
+          </div>
+          <div class="back second-color">
+            Back static
+          </div>
         </div>
-        <div class="back">
-          static back
+
+        <div class="page" data-static="1">
+          <div class="front first-color">
+            FHERE BROTHER
+          </div>
+          <div class="back second-color">
+            Back static 2
+          </div>
         </div>
-      </div>
-     </div>
 
-
-     <div class="flip-down">
-
-      <div class="page" data-down="0">
-        <div class="front">
-          Flip-down front
+        <div class="page " data-static="2">
+          <div class="front second-color">
+            Front static 3
+          </div>
+          <div class="back first-color">
+            Back static 3
+          </div>
         </div>
-        <div class="back">
-          Flip-down front
-        </div>
-      </div>
 
-      <div class="page" data-down="1">
-        <div class="front">
-          Flip-down front - 1
+        <div class="page" data-static="3">
+          <div class="front first-color">
+            Front static 4
+          </div>
+          <div class="back second-color">
+            Back static 4
+          </div>
         </div>
-        <div class="back">
-          Flip-down back -1
-        </div>
-      </div>
 
-      <div class="page" data-down="2">
-        <div class="front">
-          Flip-down front
-        </div>
-        <div class="back">
-          Flip-down front
-        </div>
-      </div>
-
-     </div>
-
-     <div class="flip-up">
-
-
-      <div class="page" data-up="0">
-        <div class="front">
-          Flip-up front -1
-        </div>
-        <div class="back">
-          Flip-up front
+        <div class="page" data-static="4">
+          <div class="front second-color">
+            Front static 4 Contact me
+          </div>
+          <div class="back first-color">
+            Back static 4
+          </div>
         </div>
       </div>
 
-      <div class="page" data-up="1">
-        <div class="front">
-          Flip-up front -2
+
+      <div class="flip-down">
+        <div class="page page-0" data-down="0">
+          <div class="front second-color">
+            <div class="main-title"><span> Hello, My name is Abdel Yahaya</span> </div>
+            <div class="main-occupation"><span class="fade-1"> I am currently a Third Year Student</span> </div>
+            <div class="main-school" ><span class="fade-2"> @Carleton University</span> </div>
+            <div class="main-location"><span class="fade-3"> Ontario, Canada</span> </div>
+          </div>
+          <div class="back first-color">
+            Back 1
+          </div>
         </div>
-        <div class="back">
-          Flip-up front -2
+
+        <div class="page" data-down="1">
+          <div class="front page-1 first-color">
+
+            <div class="section up">
+              <div class="lines">
+                <div class="circle"></div>
+              <div class="horizontal-line"></div>
+              </div>
+              <div class="line-title">
+                Let me Introduce Myself
+              </div>
+              <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat exercitationem consequuntur autem alias, tempore obcaecati vel molestiae fugiat corporis sapiente.
+              </div>
+            </div>
+
+            <div class="section up">
+              <div class="lines">
+                <div class="circle"></div>
+              <div class="horizontal-line"></div>
+              </div>
+              <div class="line-title">
+                Skills
+              </div>
+              <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat exercitationem consequuntur autem alias, tempore obcaecati vel molestiae fugiat corporis sapiente.
+              </div>
+            </div>
+
+            <div class="section up">
+              <div class="lines">
+                <div class="circle"></div>
+              <div class="horizontal-line"></div>
+              </div>
+              <div class="line-title">
+                Education & Hobbies
+              </div>
+              <div class="education-hobbies">
+                  <div class="education">
+                    Education section
+                  </div>
+                  <div class="hobbies">
+                    Hobbies section
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="back second-color">
+          </div>
         </div>
+
+        <div class="page page-2" data-down="2">
+          <div class="front second-color">
+            <div class="section work-experience">
+              <div class="lines">
+                <div class="circle"></div>
+              <div class="horizontal-line"></div>
+              </div>
+              <div class="line-title">
+                work-experience
+              </div>
+              <div class="timeline">
+                <div class="container left-container">
+                  <img src="./images/google.png" alt="">
+                  <div class="text-box">
+                    <h2>Company name</h2>
+                    <small>2018-2019</small>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nisi accusantium voluptates quos eaque ea consectetur neque reprehenderit quo, magni et illo nostrum quibusdam temporibus assumenda omnis, consequuntur necessitatibus fuga repellendus laudantium impedit, in officia qui! Rerum ea veritatis nisi.</p>
+                    <span class="left-container-arrow"></span>
+                  </div>
+                </div>
+  
+                <div class="container right-container">
+                  <img src="./images/google.png" alt="">
+                  <div class="text-box">
+                    <h2>Company name</h2>
+                    <small>2018-2019</small>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nisi accusantium voluptates quos eaque ea consectetur neque reprehenderit quo, magni et illo nostrum quibusdam temporibus assumenda omnis, consequuntur necessitatibus fuga repellendus laudantium impedit, in officia qui! Rerum ea veritatis nisi.</p>
+                    <span class="right-container-arrow"></span>
+                  </div>
+                </div>
+  
+                <div class="container left-container">
+                  <img src="./images/google.png" alt="">
+                  <div class="text-box">
+                    <h2>Company name</h2>
+                    <small>2018-2019</small>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nisi accusantium voluptates quos eaque ea consectetur neque reprehenderit quo, magni et illo nostrum quibusdam temporibus assumenda omnis, consequuntur necessitatibus fuga repellendus laudantium impedit, in officia qui! Rerum ea veritatis nisi.</p>
+                    <span class="left-container-arrow"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="back first-color">
+            Back 3
+          </div>
+        </div>
+
+        <div class="page page-3" data-down="3">
+          <div class="front first-color">
+            <div class="section work-experience">
+              <div class="lines">
+                <div class="circle"></div>
+              <div class="horizontal-line"></div>
+              </div>
+              <div class="line-title">
+                Personal projects
+              </div>
+              <div class="timeline">
+                <div class="container left-container">
+                  <img src="./images/google.png" alt="">
+                  <div class="text-box">
+                    <h2>Company name</h2>
+                    <small>2018-2019</small>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nisi accusantium voluptates quos eaque ea consectetur neque reprehenderit quo, magni et illo nostrum quibusdam temporibus assumenda omnis, consequuntur necessitatibus fuga repellendus laudantium impedit, in officia qui! Rerum ea veritatis nisi.</p>
+                    <span class="left-container-arrow"></span>
+                  </div>
+                </div>
+  
+                <div class="container right-container">
+                  <img src="./images/google.png" alt="">
+                  <div class="text-box">
+                    <h2>Company name</h2>
+                    <small>2018-2019</small>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nisi accusantium voluptates quos eaque ea consectetur neque reprehenderit quo, magni et illo nostrum quibusdam temporibus assumenda omnis, consequuntur necessitatibus fuga repellendus laudantium impedit, in officia qui! Rerum ea veritatis nisi.</p>
+                    <span class="right-container-arrow"></span>
+                  </div>
+                </div>
+  
+                <div class="container left-container">
+                  <img src="./images/google.png" alt="">
+                  <div class="text-box">
+                    <h2>Company name</h2>
+                    <small>2018-2019</small>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nisi accusantium voluptates quos eaque ea consectetur neque reprehenderit quo, magni et illo nostrum quibusdam temporibus assumenda omnis, consequuntur necessitatibus fuga repellendus laudantium impedit, in officia qui! Rerum ea veritatis nisi.</p>
+                    <span class="left-container-arrow"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+          <div class="back second-color">
+            Back 4
+          </div>
+        </div>
+
+        <div class="page page-4" data-down="4">
+          <div class="front second-color">
+            Contact me
+          </div>
+          <div class="back first-color">
+            Back 4
+          </div>
+        </div>
+        
+
       </div>
 
-     </div>
+    </div>
 
     </div>
 
